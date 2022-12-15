@@ -98,6 +98,7 @@ public class RestauranteController {
 	private void merge(Map<String, Object> camposOrigem, Restaurante restauranteDestino) {
 		camposOrigem.forEach((nomePropriedade, valorPropriedade) ->{
 			
+			
 			System.out.println(nomePropriedade + " = " + valorPropriedade);
 		});
 	}
