@@ -10,6 +10,6 @@ public class AlgafoodApiApplication {
 		SpringApplication.run(AlgafoodApiApplication.class, args);
 		//alterado do eclipse
 		//alteração 2
-		System.out.println("Olá");
+		//System.out.println("Olá");
 	}
 }
