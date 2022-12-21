@@ -14,16 +14,15 @@ public class ConsultaPermissaoMain {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new SpringApplicationBuilder(AlgafoodApiApplication.class)
-				.web(WebApplicationType.NONE)
-				.run(args);
-		
+				.web(WebApplicationType.NONE).run(args);
+
 		PermissaoRepository permissaoRepository = applicationContext.getBean(PermissaoRepository.class);
-		
-		List<Permissao> todasPermissoes = permissaoRepository.listar();
-		
+
+		List<Permissao> todasPermissoes = permissaoRepository.findAll();
+
 		for (Permissao permissao : todasPermissoes) {
 			System.out.printf("%s - %s\n", permissao.getNome(), permissao.getDescricao());
 		}
 	}
-	
+
 }
