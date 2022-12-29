@@ -1,4 +1,4 @@
-package infrastruture.repository;
+package com.algaworks.algafood.infrastruture.repository;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -12,7 +12,7 @@ import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.RestauranteRepositoryQueries;
 
 @Repository
-public class RestauranteRepositoryImpl implements  RestauranteRepositoryQueries {
+public class RestauranteRepositoryImpl implements RestauranteRepositoryQueries {
 
 	@PersistenceContext
 	private EntityManager manager;
@@ -32,5 +32,3 @@ public class RestauranteRepositoryImpl implements  RestauranteRepositoryQueries 
 	}
 	
 }
-
-
